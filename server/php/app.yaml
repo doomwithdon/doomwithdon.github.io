@@ -1,0 +1,13 @@
+application: doom-ftp
+version: 1
+runtime: php
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /UploadHandler.php
+  static_dir: UploadHandler.php
+
+
+- url: /
+  script: index.app
